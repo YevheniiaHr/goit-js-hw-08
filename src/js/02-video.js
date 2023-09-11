@@ -9,10 +9,12 @@ const currentTime = Number(localStorage.getItem(TIME_KEY));
 
 
 function playOn(data) {
-    localStorage.setItem("videoplayer-current-time", data.seconds)
+    localStorage.setItem(TIME_KEY, data.seconds)
 };
 
  player.setCurrentTime(currentTime)
  
 
 console.log(currentTime)
+
+
